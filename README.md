@@ -1,4 +1,5 @@
-## 프로젝트 폴더: zozo's mbti
+## zozo's mbti
+프로젝트 폴더: zozo's mbti
 작업환경: nodejs, npm mysql, mysql 
 
 1. mysql를 이용해 'person', 'job', 'mbti_match','dummy' table('team3/mbti table/screen shot' 참조)을 가진 'mbti' schema를 생성합니다.
