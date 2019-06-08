@@ -6,7 +6,7 @@
 2. 'team3/mbti table'에 있는 csv파일들을 각각의 테이블에 import합니다.
 
 
-3. $ npm i
+## $ npm i
 
 
-4. $ node main.js
+## $ node main.js
