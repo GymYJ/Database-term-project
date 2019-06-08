@@ -1,8 +1,8 @@
-질의1. 입력받은 성격에 해당하는 사람들중 입력받은 직업에 종사하는 종사자의 비율은?
+질의1. 입력받은 성격에 해당하는 사람들중 입력받은 직업에 종사하는 종사자의 비율
 `select count(*) from person where mbtitype = [mbti 입력값] and jobtype = [직업 입력값]`
 이 결과를 `select count(*) as peoplecount from person where mbtitype = ? `(해당 mbti 사람 수) 로 나눈다.                                   
 
-질의2. 자신의 mbti와 직업을 입력했을 때 입력한 직업의 모든 mbti별 종사자 수와 조화점수
+질의2. 자신의 mbti와 직업을 입력했을 때 입력한 직업의 모든 mbti별 종사자 비율과 본인 유형과의 관계적합도
 `select j.jobtype, j.mbtitype, j.numofworkers/t.total*100 as "percent", m.matchpoint
             from (mbti_match m inner join job j on j.mbtitype = m.othermbtitype) inner join 
                (select jobtype, sum(numofworkers) as total 
