@@ -1,192 +1,193 @@
-Cleric	INFP	0
-Cleric	ENFP	0
-Cleric	INFJ	0
-Cleric	ENFJ	2
-Cleric	INTJ	0
-Cleric	ENTJ	0
-Cleric	INTP	0
-Cleric	ENTP	0
-Cleric	ISFP	1
-Cleric	ESFP	1
-Cleric	ISTP	1
-Cleric	ESTP	0
-Cleric	ISFJ	1
-Cleric	ESFJ	1
-Cleric	ISTJ	1
-Cleric	ESTJ	2
-Soldier	INFP	0
-Soldier	ENFP	0
-Soldier	INFJ	0
-Soldier	ENFJ	0
-Soldier	INTJ	0
-Soldier	ENTJ	0
-Soldier	INTP	0
-Soldier	ENTP	0
-Soldier	ISFP	0
-Soldier	ESFP	1
-Soldier	ISTP	1
-Soldier	ESTP	2
-Soldier	ISFJ	4
-Soldier	ESFJ	0
-Soldier	ISTJ	1
-Soldier	ESTJ	1
-Broadcaster	INFP	0
-Broadcaster	ENFP	2
-Broadcaster	INFJ	0
-Broadcaster	ENFJ	1
-Broadcaster	INTJ	0
-Broadcaster	ENTJ	1
-Broadcaster	INTP	0
-Broadcaster	ENTP	1
-Broadcaster	ISFP	0
-Broadcaster	ESFP	0
-Broadcaster	ISTP	2
-Broadcaster	ESTP	1
-Broadcaster	ISFJ	0
-Broadcaster	ESFJ	2
-Broadcaster	ISTJ	1
-Broadcaster	ESTJ	3
-Politician	INFP	1
-Politician	ENFP	4
-Politician	INFJ	2
-Politician	ENFJ	8
-Politician	INTJ	2
-Politician	ENTJ	12
-Politician	INTP	3
-Politician	ENTP	8
-Politician	ISFP	5
-Politician	ESFP	5
-Politician	ISTP	4
-Politician	ESTP	11
-Politician	ISFJ	11
-Politician	ESFJ	8
-Politician	ISTJ	11
-Politician	ESTJ	7
-Artist	INFP	41
-Artist	ENFP	30
-Artist	INFJ	21
-Artist	ENFJ	13
-Artist	INTJ	13
-Artist	ENTJ	9
-Artist	INTP	8
-Artist	ENTP	30
-Artist	ISFP	44
-Artist	ESFP	27
-Artist	ISTP	21
-Artist	ESTP	25
-Artist	ISFJ	19
-Artist	ESFJ	30
-Artist	ISTJ	9
-Artist	ESTJ	8
-Scholar	INFP	2
-Scholar	ENFP	6
-Scholar	INFJ	6
-Scholar	ENFJ	3
-Scholar	INTJ	10
-Scholar	ENTJ	1
-Scholar	INTP	11
-Scholar	ENTP	8
-Scholar	ISFP	0
-Scholar	ESFP	0
-Scholar	ISTP	0
-Scholar	ESTP	1
-Scholar	ISFJ	1
-Scholar	ESFJ	0
-Scholar	ISTJ	2
-Scholar	ESTJ	0
-Businessman	INFP	0
-Businessman	ENFP	1
-Businessman	INFJ	0
-Businessman	ENFJ	1
-Businessman	INTJ	2
-Businessman	ENTJ	2
-Businessman	INTP	4
-Businessman	ENTP	0
-Businessman	ISFP	1
-Businessman	ESFP	6
-Businessman	ISTP	3
-Businessman	ESTP	1
-Businessman	ISFJ	0
-Businessman	ESFJ	3
-Businessman	ISTJ	5
-Businessman	ESTJ	3
-Player	INFP	0
-Player	ENFP	0
-Player	INFJ	0
-Player	ENFJ	0
-Player	INTJ	1
-Player	ENTJ	1
-Player	INTP	0
-Player	ENTP	0
-Player	ISFP	1
-Player	ESFP	0
-Player	ISTP	4
-Player	ESTP	0
-Player	ISFJ	1
-Player	ESFJ	0
-Player	ISTJ	0
-Player	ESTJ	0
-Author	INFP	15
-Author	ENFP	14
-Author	INFJ	6
-Author	ENFJ	4
-Author	INTJ	5
-Author	ENTJ	0
-Author	INTP	5
-Author	ENTP	0
-Author	ISFP	0
-Author	ESFP	4
-Author	ISTP	0
-Author	ESTP	6
-Author	ISFJ	0
-Author	ESFJ	2
-Author	ISTJ	0
-Author	ESTJ	4
-Jurist	INFP	0
-Jurist	ENFP	1
-Jurist	INFJ	0
-Jurist	ENFJ	0
-Jurist	INTJ	0
-Jurist	ENTJ	0
-Jurist	INTP	0
-Jurist	ENTP	0
-Jurist	ISFP	0
-Jurist	ESFP	0
-Jurist	ISTP	0
-Jurist	ESTP	0
-Jurist	ISFJ	1
-Jurist	ESFJ	0
-Jurist	ISTJ	0
-Jurist	ESTJ	3
-Critic	INFP	0
-Critic	ENFP	1
-Critic	INFJ	0
-Critic	ENFJ	1
-Critic	INTJ	0
-Critic	ENTJ	0
-Critic	INTP	0
-Critic	ENTP	0
-Critic	ISFP	0
-Critic	ESFP	0
-Critic	ISTP	0
-Critic	ESTP	0
-Critic	ISFJ	0
-Critic	ESFJ	1
-Critic	ISTJ	0
-Critic	ESTJ	2
-Expert	INFP	0
-Expert	ENFP	0
-Expert	INFJ	1
-Expert	ENFJ	3
-Expert	INTJ	0
-Expert	ENTJ	0
-Expert	INTP	0
-Expert	ENTP	1
-Expert	ISFP	0
-Expert	ESFP	1
-Expert	ISTP	0
-Expert	ESTP	1
-Expert	ISFJ	0
-Expert	ESFJ	0
-Expert	ISTJ	1
-Expert	ESTJ	0
+Column1,Column2,Column3
+Cleric,INFP,0
+Cleric,ENFP,0
+Cleric,INFJ,0
+Cleric,ENFJ,2
+Cleric,INTJ,0
+Cleric,ENTJ,0
+Cleric,INTP,0
+Cleric,ENTP,0
+Cleric,ISFP,1
+Cleric,ESFP,1
+Cleric,ISTP,1
+Cleric,ESTP,0
+Cleric,ISFJ,1
+Cleric,ESFJ,1
+Cleric,ISTJ,1
+Cleric,ESTJ,2
+Soldier,INFP,0
+Soldier,ENFP,0
+Soldier,INFJ,0
+Soldier,ENFJ,0
+Soldier,INTJ,0
+Soldier,ENTJ,0
+Soldier,INTP,0
+Soldier,ENTP,0
+Soldier,ISFP,0
+Soldier,ESFP,1
+Soldier,ISTP,1
+Soldier,ESTP,2
+Soldier,ISFJ,4
+Soldier,ESFJ,0
+Soldier,ISTJ,1
+Soldier,ESTJ,1
+Broadcaster,INFP,0
+Broadcaster,ENFP,2
+Broadcaster,INFJ,0
+Broadcaster,ENFJ,1
+Broadcaster,INTJ,0
+Broadcaster,ENTJ,1
+Broadcaster,INTP,0
+Broadcaster,ENTP,1
+Broadcaster,ISFP,0
+Broadcaster,ESFP,0
+Broadcaster,ISTP,2
+Broadcaster,ESTP,1
+Broadcaster,ISFJ,0
+Broadcaster,ESFJ,2
+Broadcaster,ISTJ,1
+Broadcaster,ESTJ,3
+Politician,INFP,1
+Politician,ENFP,4
+Politician,INFJ,2
+Politician,ENFJ,8
+Politician,INTJ,2
+Politician,ENTJ,12
+Politician,INTP,3
+Politician,ENTP,8
+Politician,ISFP,5
+Politician,ESFP,5
+Politician,ISTP,4
+Politician,ESTP,11
+Politician,ISFJ,11
+Politician,ESFJ,8
+Politician,ISTJ,11
+Politician,ESTJ,7
+Artist,INFP,41
+Artist,ENFP,30
+Artist,INFJ,21
+Artist,ENFJ,13
+Artist,INTJ,13
+Artist,ENTJ,9
+Artist,INTP,8
+Artist,ENTP,30
+Artist,ISFP,44
+Artist,ESFP,27
+Artist,ISTP,21
+Artist,ESTP,25
+Artist,ISFJ,19
+Artist,ESFJ,30
+Artist,ISTJ,9
+Artist,ESTJ,8
+Scholar,INFP,2
+Scholar,ENFP,6
+Scholar,INFJ,6
+Scholar,ENFJ,3
+Scholar,INTJ,10
+Scholar,ENTJ,1
+Scholar,INTP,11
+Scholar,ENTP,8
+Scholar,ISFP,0
+Scholar,ESFP,0
+Scholar,ISTP,0
+Scholar,ESTP,1
+Scholar,ISFJ,1
+Scholar,ESFJ,0
+Scholar,ISTJ,2
+Scholar,ESTJ,0
+Businessman,INFP,0
+Businessman,ENFP,1
+Businessman,INFJ,0
+Businessman,ENFJ,1
+Businessman,INTJ,2
+Businessman,ENTJ,2
+Businessman,INTP,4
+Businessman,ENTP,0
+Businessman,ISFP,1
+Businessman,ESFP,6
+Businessman,ISTP,3
+Businessman,ESTP,1
+Businessman,ISFJ,0
+Businessman,ESFJ,3
+Businessman,ISTJ,5
+Businessman,ESTJ,3
+Player,INFP,0
+Player,ENFP,0
+Player,INFJ,0
+Player,ENFJ,0
+Player,INTJ,1
+Player,ENTJ,1
+Player,INTP,0
+Player,ENTP,0
+Player,ISFP,1
+Player,ESFP,0
+Player,ISTP,4
+Player,ESTP,0
+Player,ISFJ,1
+Player,ESFJ,0
+Player,ISTJ,0
+Player,ESTJ,0
+Author,INFP,15
+Author,ENFP,14
+Author,INFJ,6
+Author,ENFJ,4
+Author,INTJ,5
+Author,ENTJ,0
+Author,INTP,5
+Author,ENTP,0
+Author,ISFP,0
+Author,ESFP,4
+Author,ISTP,0
+Author,ESTP,6
+Author,ISFJ,0
+Author,ESFJ,2
+Author,ISTJ,0
+Author,ESTJ,4
+Jurist,INFP,0
+Jurist,ENFP,1
+Jurist,INFJ,0
+Jurist,ENFJ,0
+Jurist,INTJ,0
+Jurist,ENTJ,0
+Jurist,INTP,0
+Jurist,ENTP,0
+Jurist,ISFP,0
+Jurist,ESFP,0
+Jurist,ISTP,0
+Jurist,ESTP,0
+Jurist,ISFJ,1
+Jurist,ESFJ,0
+Jurist,ISTJ,0
+Jurist,ESTJ,3
+Critic,INFP,0
+Critic,ENFP,1
+Critic,INFJ,0
+Critic,ENFJ,1
+Critic,INTJ,0
+Critic,ENTJ,0
+Critic,INTP,0
+Critic,ENTP,0
+Critic,ISFP,0
+Critic,ESFP,0
+Critic,ISTP,0
+Critic,ESTP,0
+Critic,ISFJ,0
+Critic,ESFJ,1
+Critic,ISTJ,0
+Critic,ESTJ,2
+Expert,INFP,0
+Expert,ENFP,0
+Expert,INFJ,1
+Expert,ENFJ,3
+Expert,INTJ,0
+Expert,ENTJ,0
+Expert,INTP,0
+Expert,ENTP,1
+Expert,ISFP,0
+Expert,ESFP,1
+Expert,ISTP,0
+Expert,ESTP,1
+Expert,ISFJ,0
+Expert,ESFJ,0
+Expert,ISTJ,1
+Expert,ESTJ,0
