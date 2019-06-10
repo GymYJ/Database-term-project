@@ -181,11 +181,30 @@ module.exports = {
 
     return list;
   },spec:function(topic){
-    var list = ` <img src="https://www.idrlabs.com/static/16p-avatars/hume.jpg"><ul class="mbtilisd">`;
+    var list = '<img src="https://www.idrlabs.com/static/16p-avatars/';
     var i = 0;
+    while(i < topic.length){
+      var namesplit = `${topic[i].name}`.split(' ');
+      var final='';
+      if(namesplit.length === 1) {
+        final = namesplit[0];
+      }
+      else {
+        for(var j=0; j<namesplit.length; j++) {
+          final = final + namesplit[j] + '-';
+          
+        }
+        final = final.slice(0,-1);
+      }
+      list = list + final.toLocaleLowerCase();
+      i = i + 1;
+    }
+    list = list+'.jpg"><ul class="mbtilisd"></ul>';
+    i = 0;
 
     while(i < topic.length){
         list = list + `<li><a>Quotes : <a/>${topic[i].quotes}</li>`;//.title해줘야 title property 가리킴.
+        
         i = i + 1;                                                                       
     }
     list = list+'</ul>';
