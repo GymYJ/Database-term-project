@@ -32,6 +32,7 @@ var app = http.createServer(function(request,response){
           var html = template.HTML( list,//template.js의 가장 큰들의 HTML을 만들어줌.
             `<h2>${title}</h2>${description}`,
             `<a href="/create">MBTI,JOBS INPUT</a>`,
+            `<a href="/create"> </a>`,
             `<a href="/create"> </a>`
           );
           response.writeHead(200);
@@ -46,7 +47,7 @@ var app = http.createServer(function(request,response){
   }
     var body = template.body(topic);
     var list = template.list(topic);
-    var html = template.HTML(list,body,`<a href="/create"> </a>`,`<a href="/create"> </a>`);
+    var html = template.HTML(list,body,`<a href="/create"> </a>`,`<a href="/create"> </a>`,`<a href="/create"> </a>`);
     response.writeHead(200);
     response.end(html);
   }
@@ -60,7 +61,7 @@ var app = http.createServer(function(request,response){
   var spec =template.spec(topic);
   var body = template.body(topic);
   var list = template.list(topic);
-  var html = template.HTML(list,body,spec,`<a href="/create"> </a>`);
+  var html = template.HTML(list,body,spec,`<a href="/create"> </a>`,`<a href="/create"> </a>`);
   response.writeHead(200);
   response.end(html);
 })
@@ -72,14 +73,15 @@ var app = http.createServer(function(request,response){
     if(error3){
       throw error3;
     }
-    var title = '자신의 mbti유형과 현재 직업을 입력해 주세요';
+    var title = '자신의 mbti유형, 현재 직업 그리고 거주 국가를 입력해 주세요';
     var list = template.list(topics);
     var html = template.HTML(title, list,
       ` <form action="/create_process" method="post">
-        <p><input type="text" name="title" placeholder="mbti"></p>
+        <p><input type="text" name="mbti" placeholder="mbti"></p>
         <p>
-          <textarea name="description" placeholder="Job"></textarea>
+          <input type="text" name="job" placeholder="Job">
         </p>
+        <p><input type="text" name="country" placeholder="country"></p>
         <p>
           <input type="submit">
         </p>
@@ -97,13 +99,13 @@ var app = http.createServer(function(request,response){
   request.on('end', function(){
       var post = qs.parse(body);
       db.query(`select count(*) as jobcount from person where mbtitype = ? and jobtype =?`,
-       [post.title, post.description],//위값,아래 값 들어감
+       [post.mbti, post.job],//위값,아래 값 들어감
        function(error, result){
           if(error){
             throw error;
           }
           db.query(`select count(*) as peoplecount from person where mbtitype = ? `,
-          [post.title],//위값,아래 값 들어감
+          [post.mbti],
           function(error, people){
              if(error){
                throw error;
@@ -119,30 +121,41 @@ var app = http.createServer(function(request,response){
                group by jobtype) as t
             where m.mymbtitype = ?
             and j.jobtype = ?`,
-          [ post.description, post.title, post.description],//위값,아래 값 들어감
+          [ post.job, post.mbti, post.job],//위값,아래 값 들어감
           function(error, goodjob){
              if(error){
                throw error;
                }
-               var title = `DB analysis2 : 본인의 성격 '${post.title}'을 가진 사람들 중 본인의 직업 '${post.description}'에 종사하는 비율은 '${cal.toFixed(2)}'% 입니다.<br> `;
-               var description = '성격에 따른 직업 적성도를 체크하세요';
+               var goodjob = template.goodjob(goodjob);
+               db.query(`Select j.salary, c.gdp
+                From job j, country c
+                Where j.jobtype = ? and j.mbtitype = ? and c.country = ?`,
+             [ post.job, post.mbti, post.country],//위값,아래 값 들어감
+             function(error4, country){
+                if(error4){
+                  throw error4;
+                  }
+               var title = `DB analysis 3 : 본인의 성격 '${post.mbti}'을 가진 사람들 중 본인의 직업 '${post.job}'에 종사하는 비율은 '${cal.toFixed(2)}'% 입니다.<br> `;
+               var job = '성격에 따른 직업 적성도를 체크하세요';
                var list = template.list(result);//template.js에 있는 'list' property의 함수->클릭 시에 id태그가 달린곳으로 링크 걸음.
-               var goodjob = template.goodjob(goodjob);//template.js에 있는 'list' property의 함수->클릭 시에 id태그가 달린곳으로 링크 걸음.
+               //template.js에 있는 'list' property의 함수->클릭 시에 id태그가 달린곳으로 링크 걸음.
+               var country=template.country(country);
                var html = template.HTML( list,//template.js의 가장 큰들의 HTML을 만들어줌.
-                 `<h2>${title}</h2>${description}`,
-                 `<a href="/create">MBTI,JOBS INPUT</a>`,goodjob
+                 `<h2>${title}</h2>${job}`,
+                 `<a href="/create">MBTI,JOBS INPUT</a>`,goodjob,country
                );
                // response.writeHead(302, {Location: `/?id=${result[0].jobcount}`});
                response.end(html);
-             }
-          )
+              })
+             })
+          
 ////////////////////
 
-          }
-         )  
+          })
+           
 
-       }
-      ) 
+       })
+      
   });
 }
 });
