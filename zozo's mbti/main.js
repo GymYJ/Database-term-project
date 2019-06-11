@@ -86,6 +86,7 @@ var app = http.createServer(function(request,response){
           <input type="submit">
         </p>
       </form>`,
+      `<a href="/create"> </a>`,
       `<a href="/create"> </a>`
     );
     response.writeHead(200);
