@@ -31,7 +31,7 @@ var app = http.createServer(function(request,response){
           var list = template.list(topics);//template.js에 있는 'list' property의 함수->클릭 시에 id태그가 달린곳으로 링크 걸음.
           var html = template.HTML( list,//template.js의 가장 큰들의 HTML을 만들어줌.
             `<h2>${title}</h2>${description}`,
-            `<a href="/create">MBTI,JOBS INPUT</a>`,
+            `<a href="/create"><strong><input type='submit' value= "MBTI,JOB, COUNTRY INPUT"></strong></a>`,
             `<a href="/create"> </a>`,
             `<a href="/create"> </a>`
           );
