@@ -136,14 +136,14 @@ var app = http.createServer(function(request,response){
                 if(error4){
                   throw error4;
                   }
-               var title = `DB analysis 3 : 본인의 성격 '${post.mbti}'을 가진 사람들 중 본인의 직업 '${post.job}'에 종사하는 비율은 '${cal.toFixed(2)}'% 입니다.<br> `;
-               var job = '성격에 따른 직업 적성도를 체크하세요';
+               var title = `<strong>DB analysis 3</strong> :<br> 본인의 성격 <strong>'${post.mbti}'</strong>을 가진 사람들 중 본인의 직업 <strong>'${post.job}'</strong>에 종사하는 비율은 <strong>'${cal.toFixed(2)}'%</strong> 입니다.<br> `;
+               var job = '<br><strong>다른 유형으로 다시 검색하기<strong>'
                var list = template.list(result);//template.js에 있는 'list' property의 함수->클릭 시에 id태그가 달린곳으로 링크 걸음.
                //template.js에 있는 'list' property의 함수->클릭 시에 id태그가 달린곳으로 링크 걸음.
                var country=template.country(country);
                var html = template.HTML( list,//template.js의 가장 큰들의 HTML을 만들어줌.
-                 `<h2>${title}</h2>${job}`,
-                 `<a href="/create">MBTI,JOBS INPUT</a>`,goodjob,country
+                 `<a>${title}</a>${job}`,
+                 `<a href="/create"><input type="submit" value="MBTI,JOBS,COUNTRY INPUT"></a>`,goodjob,country
                );
                // response.writeHead(302, {Location: `/?id=${result[0].jobcount}`});
                response.end(html);

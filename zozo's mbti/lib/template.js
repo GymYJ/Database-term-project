@@ -68,7 +68,7 @@ module.exports = {
       <meta charset="utf-8">
     </head>
     <body>
-      <h1><a class="home" href="http://localhost:3000">Home</a></h1>
+      <h1><a class="home" href="http://172.16.220.26:3000">Home</a></h1>
      <section class="main">
       ${list}
       ${goodjob}
@@ -224,16 +224,16 @@ module.exports = {
     list = list+'</ul>';
     return list;  
   },goodjob:function(topic){
-    var list = `<ul class="mbtilist"><strong>DB analysis 1 :</strong> 본인의 직업 <strong>${topic[0].jobtype}</strong>에 종사하는<br>`;
+    var list = `<ul><strong>DB analysis 1 :</strong> 본인의 직업 <strong>${topic[0].jobtype}</strong>에 종사하는<br>`;
     var i = 0;
   while(i < topic.length){
-      list = list + `<a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<b>${topic[i].mbtitype}</b>가  <b>${topic[i].percent.toFixed(2)}%</b>이고 본인 유형과의 관계적합도는<b>${topic[i].matchpoint}</b>점 입니다. <br></a>`;//.title해줘야 title property 가리킴.
+      list = list + `<a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<b>${topic[i].mbtitype}</b>가  <b>${topic[i].percent.toFixed(2)}%</b>이고 본인 유형과의 관계적합도는<b>${topic[i].matchpoint}</b>점 입니다. <br></a>`;//.title해줘야 title property 가리킴.
       i = i + 1;                                                                       
   }
   list = list+'</ul>';
   return list;  
   }, country:function(topic){
-    var list = `<ul><strong>DB analysis 2 :</strong> 본인 직업군의 연봉 : <strong>${topic[0].salary}$</strong> 본인의 거주국의 평균 <strong>gdb : ${topic[0].gdp}$</strong><br>`;
+    var list = `<ul><strong>DB analysis 2 :</strong><br> 본인 직업군의 연봉 : <strong>${topic[0].salary}$</strong> 본인의 거주국의 평균 <strong>gdb : ${topic[0].gdp}$</strong><br>`;
 
     var i = 0;
     while(i < topic.length){
