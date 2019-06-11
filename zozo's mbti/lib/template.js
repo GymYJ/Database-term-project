@@ -215,7 +215,7 @@ module.exports = {
       list = list + final.toLocaleLowerCase();
       i = i + 1;
     }
-    list = list+'.jpg" style="width: 50%; height: auto;"><ul class="mbtilisd"></ul>';
+    list = list+'.jpg" style="width: 40%; height: auto;"><ul class="mbtilisd"></ul>';
     i = 0;
     while(i < topic.length){
         list = list + `<li class="mbtilist"><a>Quotes : <a/>${topic[i].quotes}</li>`;//.title해줘야 title property 가리킴.

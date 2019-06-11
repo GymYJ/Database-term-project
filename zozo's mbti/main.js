@@ -26,7 +26,7 @@ var app = http.createServer(function(request,response){
         db.query(`SELECT * FROM person`,function(error,topics){//2번째 인자=첫번째 sql문이 실행 된 후에 서버가 응답된 결과를 우리가 처리할 수 있도록 callback function을 주게 되있다.
                                                              //그  callback function의 시그니쳐는 첫번째 파라미터 error에는 error정보가 담겨있는 인자(원인이 되는 요소)가 담긴다.
                                                             //결과가 성공적일때는 두번째 파라미터(topics)에 SQL결과값이 담김.
-          var title = 'MBTI';
+          var title = ' ';
           var description = '성격에 따른 직업 적성도를 체크하세요';
           var list = template.list(topics);//template.js에 있는 'list' property의 함수->클릭 시에 id태그가 달린곳으로 링크 걸음.
           var html = template.HTML( list,//template.js의 가장 큰들의 HTML을 만들어줌.
