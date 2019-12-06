@@ -25,13 +25,14 @@ mbtitype별 유명인 리스트 및 명언제공,
 2. 'team3/mbti table'에 있는 csv파일들을 각각의 테이블에 import합니다. (MySQL Workbench 추천)
 
 
+## my part
+제가 맡은 일은 MySQL Workbench를 사용하여 SQL Query문 작성, 테이블 생성 및 관리입니다.
+
 ## $ npm i
 
 
 ## $ node main.js
 
 
-## my part
-제가 맡은 일은 MySQL Workbench를 사용하여 SQL Query문 작성, 테이블 생성 및 관리입니다.
 
 
